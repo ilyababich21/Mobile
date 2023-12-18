@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/id_search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="200"
+        android:title="Search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/id_connect"
+        android:icon="@drawable/ic_bluetooth_connected"
+        android:orderInCategory="100"
+        android:title="Connect"
+        app:showAsAction="ifRoom"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/id_send_request"
+        android:icon="@drawable/ic_start_communication"
+        android:orderInCategory="100"
+        android:title="Send Request"
+        app:showAsAction="ifRoom"
+        android:visible="true"/>
+</menu>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="machine"
+            type="com.example.nivaserviceandroid.model.HarvesterModel" />
+    </data>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@color/purple_200">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/machine_data_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@{String.valueOf(machine.id)}"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/machine_data_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="@{machine.date}" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center_vertical"
+                android:text="Уровень масла (мм):" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{String.valueOf(machine.oilLevel)}" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Температура масла:" />
+
+            <TextView
+                android:id="@+id/machine_data_apsh_amperageA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{String.valueOf(machine.oilTemperature)}" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/apsh_voltage_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Скорость лев/прав \n гусеницы(мм/мин):" />
+
+               <TextView
+                android:id="@+id/machine_data_apsh_voltageA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{String.valueOf(machine.leftSpeed)}" />
+
+            <TextView
+                android:id="@+id/machine_data_apsh_voltageB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{String.valueOf(machine.rightSpeed)}" />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Крен вертикальный/\nгоризонтальный:" />
+
+            <TextView
+                android:id="@+id/machine_data_engine_amperageA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{String.valueOf(machine.verticalAngle)}" />
+            <TextView
+                android:id="@+id/machine_data_engine_amperageB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@{String.valueOf(machine.horizontalAngle)}" />
+        </TableRow>
+    </TableLayout>
+</layout>

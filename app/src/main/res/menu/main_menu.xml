@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_home"
+        android:title="На главную" />
+
+    <item
+        android:id="@+id/nav_event"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_records_count"
+        android:title="События" />
+
+    <item
+        android:id="@+id/nav_alarm"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_error"
+        android:title="Аварии" />
+
+    <item
+        android:id="@+id/nav_machine_data"
+        android:orderInCategory="4"
+        android:icon="@drawable/ic_machine_data"
+        android:title="Телеметрия" />
+    <item
+        android:id="@+id/nav_plot"
+        android:orderInCategory="5"
+        android:icon="@drawable/ic_plots"
+        android:title="Графики" />
+    </group>
+
+</menu>

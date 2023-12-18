@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NivaService</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="discovering">Поиск...</string>
+
+    <string name="title_item_name">Найденные устройства</string>
+
+    <string name="machine_data_text">Machine Data Fragment</string>
+    <string name="message_text">Message Fragment</string>
+    <string name="plot_text">Plot Fragment</string>
+
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_plot">PlotActivity</string>
+</resources>
